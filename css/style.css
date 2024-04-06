@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #355070;
+    --bg-color: #2d2d2d;
     --text-color: #E8EBF0;
     --primary-color: #E56B6F;
     --secondary-color: #C169C2;
@@ -16,6 +16,9 @@ body {
     font-family: "comfortaa";
     padding: 50px;
 }
+div {
+    display: flex;
+}
 nav {
     text-align: right;
     color: var(--text-color);
@@ -31,9 +34,47 @@ nav a:hover {
     color: var(--accent-color);
     background-color: var(--secondary-color);
 }
-h1 {
-    text-align: center;
-    margin-top: 50%;
-    color: #c1121f;
+h1, h2 {
+    color: var(--primary-color);
     filter: drop-shadow(0 4px 4px black);
+}
+
+h1 span {
+    color: var(--secondary-color);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.section h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+}
+
+.project {
+    display: block;
+    background-color: #1f1f1f;
+    filter: drop-shadow(0 4px 4px black);
+    border-radius: 20px;
+    border: 2px solid var(--accent-color);
+    width: 200px;
+    padding: 20px;
+    transition: ease-in 0.25s;
+}
+
+.project:hover {
+    scale: 1.025;
+    filter: drop-shadow(0 4px 16px black);
+}
+
+.project h2 {
 }
