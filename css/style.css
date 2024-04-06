@@ -1,9 +1,39 @@
+:root {
+    --bg-color: #355070;
+    --text-color: #E8EBF0;
+    --primary-color: #E56B6F;
+    --secondary-color: #C169C2;
+    --accent-color: #3B2A80;
+}
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("../fonts/Comfortaa-Bold.ttf");
+}
+
 body {
-    background-color: #003049;
+    background-color: var(--bg-color);
+    font-family: "comfortaa";
+    padding: 50px;
+}
+nav {
+    text-align: right;
+    color: var(--text-color);
+}
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 50px;
+    transition: 0.25s;
+}
+nav a:hover {
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
 }
 h1 {
     text-align: center;
-    margin-top: 48vh;
+    margin-top: 50%;
     color: #c1121f;
     filter: drop-shadow(0 4px 4px black);
 }
