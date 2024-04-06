@@ -1,0 +1,9 @@
+body {
+    background-color: #003049;
+}
+h1 {
+    text-align: center;
+    margin-top: 48vh;
+    color: #c1121f;
+    filter: drop-shadow(0 4px 4px black);
+}
