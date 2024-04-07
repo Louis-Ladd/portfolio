@@ -11,6 +11,10 @@
     src: url("../fonts/Comfortaa-Bold.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
     font-family: "comfortaa";
@@ -66,26 +70,27 @@ h1 span {
 
 .explode-icons img{
     position: absolute;
-    top: -90;
+    top: -70px;
     left: -50;
     scale: 0;
 }
 
 .explode-parent:hover .explode-icons img {
-    scale: 0.2;
+    scale: 0.25;
 }
 
 @keyframes MoveUpDown {
   0%, 100% {
-    top: -90px;
+    top: -70px;
   }
   50% {
-    top: -100px;
+    top: -90px;
   }
 }
 .explode-parent:active .explode-icons img {
     background-color: red;
 }
+
 
 .explode-icons > img:nth-child(1) { /*csharp*/
     transition: 150ms ease;
@@ -120,33 +125,33 @@ h1 span {
 }
 .explode-icons > img:nth-child(7) { /*linux*/
     transition: 650ms ease;
-    transform: translate(650px, 100px) rotate(10deg);
+    transform: translate(650px, 150px) rotate(10deg);
     animation: MoveUpDown 1.74s infinite;
 }
 .explode-icons > img:nth-child(8) { /*unity*/
     transition: 500ms ease;
-    transform: translate(400px, 200px) rotate(1deg);
-    animation: MoveUpDown 1.43s infinite;
+    transform: translate(400px, 300px) rotate(1deg);
+    animation: MoveUpDown 2.19s infinite;
 }
 .explode-icons > img:nth-child(9) { /*vim*/
     transition: 390ms ease;
-    transform: translate(150px, 200px);
+    transform: translate(150px, 320px);
     animation: MoveUpDown 1.65s infinite;
 }
 .explode-icons > img:nth-child(10) { /*c++*/
     transition: 500ms ease;
-    transform: translate(-100px, 200px);
-    animation: MoveUpDown 1.57s infinite;
+    transform: translate(-100px, 300px);
+    animation: MoveUpDown 1.83s infinite;
 }
 .explode-icons > img:nth-child(11) { /*rust*/
     transition: 250ms ease;
     filter: invert(95%) sepia(2%) saturate(765%) hue-rotate(291deg) brightness(120%) contrast(100%);
-    transform: translate(-350px, 200px);
-    animation: MoveUpDown 1.84s infinite;
+    transform: translate(-350px, 300px);
+    animation: MoveUpDown 2.94s infinite;
 }
 .explode-icons > img:nth-child(12) { /*git*/
     transition: 250ms ease;
-    transform: translate(35px, 400px);
+    transform: translate(35px, 550px);
     animation: MoveUpDown 1.73s infinite;
 }
 /* TODO: fix all translates and label the classes */
@@ -156,7 +161,7 @@ h1 span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .section h1 {
@@ -168,15 +173,25 @@ h1 span {
     font-size: 2.5em;
 }
 
+.section.projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .project {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: #1f1f1f;
     filter: drop-shadow(0 4px 4px black);
     border-radius: 20px;
     border: 2px solid var(--accent-color);
-    width: 200px;
+    width: 250px;
     padding: 20px;
     transition: ease-in 0.25s;
+    color: var(--text-color);
+    margin: 20px;
+    cursor: default;
 }
 
 .project:hover {
@@ -184,5 +199,23 @@ h1 span {
     filter: drop-shadow(0 4px 16px black);
 }
 
+.project img {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.project a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: inherit;
+}
+
 .project h2 {
+}
+
+footer h2 {
+    text-align: center;
+    color: var(--text-color)
 }
