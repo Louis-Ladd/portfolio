@@ -254,13 +254,9 @@ h1 span {
 }
 
 footer {
-    display: flex;
-    bottom: 0;
-    height: 2.5rem; 
-    width: 100%;
+    text-align: center;
 }
 
 footer h2 {
-    justify-self: center;
     color: var(--text-color)
 }
