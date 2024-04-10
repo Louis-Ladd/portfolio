@@ -30,6 +30,7 @@ nav {
     color: var(--text-color);
     margin-bottom: 50px;
 }
+
 nav a {
     color: var(--text-color);
     text-decoration: none;
@@ -248,6 +249,11 @@ h1 span {
     margin-bottom: 50px;
 }
 
+.section.blurb {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
 .section.projects {
     flex-direction: row;
     flex-wrap: wrap;
@@ -302,4 +308,22 @@ footer {
 
 footer h2 {
     color: var(--text-color)
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    nav a {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .explode-parent {
+        padding-top: 50px;
+    }
+    .explode-icons {
+        top: 40px;
+    }
 }
