@@ -253,6 +253,10 @@ h1 span {
 .project h2 {
 }
 
+.project b {
+    color: var(--primary-color);
+}
+
 footer {
     text-align: center;
 }
