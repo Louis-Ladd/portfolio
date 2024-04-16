@@ -23,7 +23,6 @@ body {
     height: 100%;
 }
 div {
-    display: flex;
 }
 nav {
     text-align: right;
@@ -254,6 +253,14 @@ h1 span {
     padding-right: 200px;
 }
 
+.section #feed{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 500px;
+}
+
 .section.projects {
     flex-direction: row;
     flex-wrap: wrap;
@@ -323,7 +330,12 @@ footer h2 {
     .explode-parent {
         padding-top: 50px;
     }
+
     .explode-icons {
         top: 40px;
+    }
+
+    .section #feed {
+        width: 100%;
     }
 }

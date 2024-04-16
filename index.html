@@ -4,6 +4,16 @@
   <title>Louis Portfolio</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
+  <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+
+  <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+
+  <!-- if using dark theme add this in addition to the main CSS file -->
+  <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
+
+  <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
   <nav>
@@ -51,6 +61,12 @@
           </div>
         </div>
       </h2>
+    </div>
+    <div class="section">
+      <h2>
+        What I'm working on
+      </h2>
+      <div id="feed"></div>
     </div>
     <div class="section projects" id="projects-section">
       <div class="project">
