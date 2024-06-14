@@ -22,8 +22,7 @@ body {
     padding: 50px;
     height: 100%;
 }
-div {
-}
+
 nav {
     text-align: right;
     color: var(--text-color);
@@ -77,6 +76,10 @@ h1, h2 {
 
 h1 span {
     color: var(--secondary-color);
+}
+
+p {
+    line-height: 1.6;
 }
 
 .content {
@@ -307,6 +310,39 @@ h1 span {
 
 .project b {
     color: var(--primary-color);
+}
+
+
+.tidbit {
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+    filter: drop-shadow(0 4px 4px black);
+    width: 45%;
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+    transition: ease-in 0.25s;
+}
+
+.tidbit:hover {
+    scale: 1.025;
+    filter: drop-shadow(0 4px 16px black);
+}
+
+.tidbit img {
+    width: 25%;
+}
+
+.tidbit:nth-child(odd) {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.tidbit:nth-child(even) {
+    align-self: flex-end;
 }
 
 footer {
