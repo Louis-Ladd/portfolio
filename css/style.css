@@ -375,4 +375,11 @@ footer h2 {
     .section #feed {
         width: 100%;
     }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .tidbit {
+        width: 85%;
+    }
 }
