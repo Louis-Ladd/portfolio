@@ -372,6 +372,22 @@ footer h2 {
         top: 40px;
     }
 
+    .explode-icons img {
+        scale: 0.2;
+    }
+
+    .explode-icons:not(.github) img {
+        scale: 0.2;
+    }
+
+    .explode-parent:hover .explode-icons:hover img {
+        scale: 0.2;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
     .section #feed {
         width: 100%;
     }
