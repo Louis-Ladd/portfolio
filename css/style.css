@@ -384,6 +384,7 @@ footer h2 {
         scale: 0.2;
     }
 
+
     nav {
         margin-top: 20px;
     }
@@ -397,5 +398,6 @@ footer h2 {
 @media screen and (max-width: 1000px) {
     .tidbit {
         width: 85%;
+        margin-top: 25px;
     }
 }
