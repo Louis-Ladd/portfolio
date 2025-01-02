@@ -33,9 +33,11 @@ nav {
 nav a {
     position: relative; 
     text-decoration: none;
-    font-size: 50px;
+    font-size: 25px;
     border-radius: 20px;
     padding-inline: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: var(--bg2-color);
 }
 
@@ -269,6 +271,7 @@ p {
 }
 
 .project {
+    z-index: 2;
     background-color: #1f1f1f;
     color: var(--text-color);
     display: flex;
@@ -329,6 +332,7 @@ p {
     filter: drop-shadow(0 4px 16px black);
 }
 
+
 .tidbit img {
     width: 25%;
 }
@@ -351,22 +355,77 @@ footer h2 {
     color: var(--text-color)
 }
 
+/* projet pages */
+
+div.project-header {
+    background-image: url("../img/windows_xp_bliss.jpg");
+    filter: drop-shadow(0 4px 16px black);
+    height: 500px;
+    border-radius: 20px;
+}
+
+.project-hero {
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.5) 70%, rgba(255,0,0,0) 100%);
+    height: 100%;
+    border-radius: 18px; /* Calculation is not pixel perfect so we do this to prevent hero picture from peeking out */
+}
+
+.project-hero-content {
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.project-hero h1 {
+    font-size: 6em;
+}
+
+.project-hero h2 {
+    font-size: 2em;
+}
+
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
     }
+
+    nav {
+        margin-top: 20px;
+        text-align: center;
+    }
+
     nav a {
         font-size: 30px;
         margin-top: 20px;
         margin-left: 0;
         margin-right: 0;
+        padding-inline: 0px;
     }
+
+    .section h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .section.github {
+        margin-bottom: 10px;
+    }
+
+    /* css moment */
+    .section.github .explode-parent {
+        padding-top: 20px;
+    }
+
     .explode-parent {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     .explode-icons {
-        top: 40px;
+        top: 70px;
     }
 
     .explode-icons img {
@@ -381,15 +440,9 @@ footer h2 {
         scale: 0.2;
     }
 
-
-    nav {
-        margin-top: 20px;
-    }
-
     .section #feed {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -398,3 +451,15 @@ footer h2 {
         margin-top: 25px;
     }
 }
+
+@keyframes rainbow-shadow {
+    0% {
+      background-position: 0 0;
+    }
+    50.01% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
