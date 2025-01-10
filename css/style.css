@@ -362,6 +362,7 @@ div.project-header {
     filter: drop-shadow(0 4px 16px black);
     height: 500px;
     border-radius: 20px;
+    margin-bottom: 50px;
 }
 
 .project-hero {
@@ -382,6 +383,43 @@ div.project-header {
 .project-hero h2 {
     font-size: 2em;
 }
+
+.project-info-grid {
+    display: grid;
+    grid-template-areas:
+    "title description"
+    "info info";
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+}
+
+.project-info-grid > div {
+    height: 85%;
+}
+
+.project-info-grid > div.title {
+    grid-area: title;
+}
+
+.project-info-grid > div.description {
+    grid-area: description;
+}
+
+.project-info-grid > div.info {
+    grid-area: info;
+}
+
+.project-info-grid div {
+    background-color: #1f1f1f;
+    color: var(--text-color);
+    align-self: flex-start;
+    filter: drop-shadow(0 4px 4px black);
+    border-radius: 20px;
+    padding: 20px;
+    cursor: default;
+    transition: ease-in 0.25s;
+}
+
 
 @media screen and (max-width: 600px) {
     body {
