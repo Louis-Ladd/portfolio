@@ -14,8 +14,13 @@ function EqualizeHeight(selector) {
   });
 }
 
+var timeOutFunctionID;
+
 window.addEventListener('resize', async () => {
-  EqualizeHeight(".equalize-height");
+  clearTimeout(timeOutFunctionID);
+  timeOutFunctionID = setTimeout(function() {
+    EqualizeHeight(".equalize-height");
+  }, 500);
 });
 
 window.addEventListener('load', async () => {
