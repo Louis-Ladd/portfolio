@@ -4,7 +4,8 @@
   --text-color: #E8EBF0;
   --primary-color: #E56B6F;
   --secondary-color: #C169C2;
-  --accent-color: #3B2A80;
+  --accent-color-dark: #3B2A80;
+  --accent-color-light: #583FBF;
 }
 
 @font-face {
@@ -60,7 +61,7 @@ nav a:hover::before {
 
 nav a:hover {
   color: var(--text-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-dark);
 }
 
 nav a.active {
@@ -303,6 +304,10 @@ p {
   justify-content: center;
 }
 
+a {
+  color: var(--accent-color-light);
+}
+
 .project {
   z-index: 2;
   background-color: #1f1f1f;
@@ -313,7 +318,7 @@ p {
   filter: drop-shadow(0 4px 4px black);
   width: 250px;
   margin: 20px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color-dark);
   border-radius: 20px;
   padding: 20px;
   cursor: default;
@@ -354,7 +359,7 @@ p {
   padding: 20px;
   filter: drop-shadow(0 4px 4px black);
   width: 45%;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color-dark);
   border-radius: 20px;
   transition: ease-in 0.25s;
 }
@@ -450,6 +455,7 @@ div.project-header.bz {
 .project-info-grid div {
   background-color: #1f1f1f;
   color: var(--text-color);
+  line-height: 2em;
   align-self: flex-start;
   filter: drop-shadow(0 4px 4px black);
   border-radius: 20px;
@@ -457,7 +463,6 @@ div.project-header.bz {
   cursor: default;
   transition: ease-in 0.25s;
 }
-
 
 @media screen and (max-width: 600px) {
   body {
