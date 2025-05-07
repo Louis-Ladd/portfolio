@@ -6,7 +6,7 @@
   --secondary-color: #C169C2;
   --accent-color-dark: #3B2A80;
   --accent-color-light: #583FBF;
-  --container-border-radius:
+  --container-border-radius: 15px;
 }
 
 @font-face {
@@ -113,16 +113,16 @@ p {
 }
 
 .gha-feed {
-  border-radius: 30px;
+  border-radius: var(--container-border-radius);
   scrollbar-width: none;
 }
 
 .gha-header {
-  border-radius: 30px 30px 0px 0px;
+  border-radius: var(--container-border-radius) var(--container-border-radius) 0px 0px;
 }
 
 .gha-footer {
-  border-radius: 0px 0px 30px 30px;
+  border-radius: 0px 0px var(--container-border-radius) var(--container-border-radius);
 }
 
 .explode-parent {
@@ -334,9 +334,32 @@ p {
   filter: drop-shadow(0 4px 4px black);
   width: 250px;
   border: 2px solid var(--accent-color-dark);
-  border-radius: 20px;
+  border-radius: var(--container-border-radius);
   padding: 20px;
   cursor: default;
+  transition: ease-in 0.25s;
+}
+
+.project .button {
+  text-align: center;
+  background-color: var(--accent-color-dark);
+  color: var(--primary-color);
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-top: auto;
+  user-select: none;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: var(--accent-color-dark);
+  margin-inline: 30px;
+  padding-block: 20px;
+  transition: ease-in 0.25s;
+}
+
+.project .button:hover {
+  background-color: var(--accent-color-dark);
+  color: white;
+  border-color: white;
   transition: ease-in 0.25s;
 }
 
@@ -451,6 +474,14 @@ div.project-header.bz {
   gap: 15px;
 }
 
+.project-info-grid h1 {
+  font-size: 2em;
+}
+
+.project-info-grid h2 {
+  font-size: 1.5em;
+}
+
 .project-info-grid>div {
   min-height: 85%;
 }
@@ -505,7 +536,7 @@ div.project-header.bz {
       "description"
       "info";
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 20px;
   }
 
   nav {

@@ -14,6 +14,10 @@ function EqualizeHeight(selector) {
   });
 }
 
+window.addEventListener('resize', async () => {
+  EqualizeHeight(".equalize-height");
+});
+
 window.addEventListener('load', async () => {
   EqualizeHeight(".equalize-height");
 });
