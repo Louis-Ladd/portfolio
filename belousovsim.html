@@ -44,17 +44,27 @@
         <h1>More info</h1>
         <p>
           I used this white paper to get the equations to calculate the state of the cells.
-          <br>
-          The cells follow these rules
-          <br>
+          The cells' state is set according to the following rules:
+          The new state is dependant on A, B, and S which are defined as
+          <br />
+          <br />
+          <span>A</span> = The number of ill cells <br />
+          <span>B</span> = The number of ill cells in it's neighborhood <br />
+          <span>S</span> = The sum of neighboring cells' states plus the current cells' state <br />
 
-          If the cell is healthy (c = 0)
+          If the cell is healthy (its state is 0), its new state is calculated as <br />
 
-          The new state is dependant on A and B which are defined as <aside>
-            A = The number of ill cells <br>
-            B = The number of ill cells in it's neighborhood
-          </aside>
+          <span>[A/k1] + [B/k2]</span> <br />
 
+          Where <span>k1</span> and <span>k2</span> are constants <br />
+
+          If the cell infected (its state is inbetween) <br />
+
+          Its new state will be calculated as <br />
+
+          <span>[S/A]+g</span>
+
+          <br /> <br />
           Here are some of my favorite outputs of this project.
         </p>
         <img src="img/brs1.gif"></img>

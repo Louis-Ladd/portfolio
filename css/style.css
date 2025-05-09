@@ -6,6 +6,7 @@
   --secondary-color: #C169C2;
   --accent-color-dark: #3B2A80;
   --accent-color-light: #583FBF;
+  --primary-complement: #6BE5E1;
   --container-border-radius: 15px;
 }
 
@@ -489,6 +490,14 @@ div.project-header.bz {
 
 .project-info-grid h2 {
   font-size: 1.5em;
+}
+
+.project-info-grid p {
+  font-size: 1.5em;
+}
+
+.project-info-grid p span {
+  color: var(--primary-complement);
 }
 
 .project-info-grid>div {
