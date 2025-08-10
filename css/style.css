@@ -443,15 +443,22 @@ div.project-header {
   min-height: var(--project-header-min-height);
 }
 
+div.project-header {
+
+  background-size: cover;
+}
+
 div.project-header.bz {
   background-image: url("../img/bzsimproj.png");
-  background-size: cover;
 }
 
 div.project-header.cyc {
 	background-image: url("../img/3dArch.png");
-	background-size: cover;
 	background-position-y: center;
+}
+
+div.project-header.wvspk {
+	background-image: url("../img/tabletStartup1.gif")
 }
 
 .project-hero {
