@@ -1,4 +1,4 @@
 GitHubActivity.feed({
-  username: "Louis-Ladd",
-  selector: "#feed",
+	username: "Louis-Ladd",
+	selector: "#feed",
 });
