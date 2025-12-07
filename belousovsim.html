@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>BZ Reaction</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+	<nav>
+	<a class="" href="index.html">Home</a>
+	<a class="" href="aboutme.html">About Me</a>
+	</nav>
+	<div class="content project-page">
+	<div class="project-header bz">
+		<div class="project-hero">
+		<div class="project-hero-content">
+			<h1>
+			Belousov–Zhabotinsky Reaction Simulation
+			</h1>
+			<h2>
+			A cellular automata simulation written in Java ☕
+			</h2>
+		</div>
+		</div>
+	</div>
+	<div class="project-info-grid">
+		<div class="title equalize-height">
+		<h1>About</h1>
+		<h2>This was a project for AP Computer Science A. For my final project, I wrote a simulation of the <a
+			href="https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction" target="_blank">Belousov
+			Reaction</a>.
+			It was written in Java using AWT and Swing.</h2>
+		</div>
+		<div class="description equalize-height">
+		<h1>What I learned</h1>
+		<h2>This project taught me how fun modeling chemical oscillations and reactions are. It was a fun deep dive into
+			both programming and theoretical concepts, blending chemistry and computer science.</h2>
+		</div>
+		<div class="info">
+		<h1>More info</h1>
+		<p>
+			I used this <a href="https://www.jstor.org/stable/24989205" target="_blank">white paper</a> to get the
+			equations to calculate the state of the cells.
+			The cells' state is set according to the following rules:
+			The cells' state is &gt; 1 and &lt; N where N is any integer. <br />
+			The new state is dependant on A, B, and S which are defined as
+			<br />
+			<br />
+			<span>A</span> = The number of ill cells <br />
+			<span>B</span> = The number of ill cells in it's neighborhood <br />
+			<span>S</span> = The sum of neighboring cells' states plus the current cells' state <br />
+
+			If the cell is healthy (its state is 0), its new state is calculated as <br />
+
+			<span>[A/k1] + [B/k2]</span> <br />
+
+			Where <span>k1</span> and <span>k2</span> are constants <br />
+
+			If the cell infected (its state is inbetween) <br />
+
+			Its new state will be calculated as <br />
+
+			<span>[S/A]+g</span><br />
+
+			If the cell is sick (its state is &equals; N)
+
+			<br /> <br />
+			Here are some of my favorite outputs of this project.
+		</p>
+		<img src="img/brs/brs1.webp"></img>
+		<img src="img/brs/brs2.webp"></img>
+		<img src="img/brs/brs3.webp"></img>
+		<img src="img/brs/brs4.webp"></img>
+		<img src="img/brs/brs5.webp"></img>
+		</div>
+	</div>
+	</div>
+	<footer>
+	<h2>©2025 Louis All rights reserved</h2>
+	</footer>
+	<script src="js/resize.js"></script>
+</body>
+
+</html>

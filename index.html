@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Louis Portfolio</title>
-  <link type="text/css" rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
-  <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+	<title>Louis Portfolio</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
+	<link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
 
-  <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+	<script type="text/javascript"
+	src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
 
-  <!-- if using dark theme add this in addition to the main CSS file -->
-  <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
+	<!-- if using dark theme add this in addition to the main CSS file -->
+	<link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
 
-  <script type="text/javascript" src="js/index.js"></script>
-
-  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/resize.js"></script>
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
+
 <body>
-  <nav>
-    <a class="active" href="#">Home</a>
-    <a class="" href="aboutme.html">About Me</a>
-  </nav>
-  <div class="content">
-    <div class="campfire">
-      <!-- TODO: add campfire effect -->
-    </div>
-    <div class="section intro">
-      <h1>
-        Hello!<br>My name is <span>Louis🧍</span>
-      </h1> 
-      <h2>
-        I love making 
-        <div class="explode-parent" id="explode-icons">
-          <a href="#explode-icons" class="rainbow_text_animated">software</a>
-          <div class="explode-icons">
-            <img src="./img/svg/csharp-plain.svg" aria-hidden="true">
-            <img src="./img/svg/python-plain.svg" aria-hidden="true">
-            <img src="./img/svg/java-plain.svg" aria-hidden="true">
-            <img src="./img/svg/github-original.svg" aria-hidden="true">
-            <img src="./img/svg/html5-plain.svg" aria-hidden="true">
-            <img src="./img/svg/css3-plain.svg" aria-hidden="true">
-            <img src="./img/svg/linux-plain.svg" aria-hidden="true">
-            <img src="./img/svg/unity-plain.svg" aria-hidden="true">
-            <img src="./img/svg/vim-plain.svg" aria-hidden="true">
-            <img src="./img/svg/cplusplus-plain.svg" aria-hidden="true">
-            <img src="./img/svg/rust-original.svg" aria-hidden="true">
-            <img src="./img/svg/git-plain.svg" aria-hidden="true">
-            <img src="./img/svg/sql-plain.svg" aria-hidden="true">
-          </div>
-        </div>
-      </h2>
-    </div>
-    <div class="section github">
-      <h2>
-        Check out my
-        <div class="explode-parent">
-          <a href="https://github.com/Louis-Ladd" target="_blank" class="rainbow_text_animated">github</a>
-          <div class="explode-icons github">
-            <img src="./img/svg/github-original.svg">
-          </div>
-        </div>
-      </h2>
-    </div>
-    <div class="section">
-      <h2>
-        What I'm working on
-      </h2>
-      <div id="feed"></div>
-    </div>
-    <div class="section projects" id="projects-section">
-      <div class="project shadow">
-          <img src="./img/waveSpeak.png">
-          <h2>WaveSpeak</h2>
-          <p>An AAC tablet that focuses on tactility and adaptability, I call it WaveSpeak.
-            This project is uses tauri which uses rust and dynamic html to build a fullstack application. <br>🚧(project page is currently under construction)🚧</p>
-      </div>
-      <div class="project">
-          <img src="./img/svg/sbox-logo.svg">
-          <h2>s&box</h2>
-          <p>I am participating in the <a href="https://sbox.game/" target="_blank">s&box</a> developer preview. 
-            s&box is a toolchain built ontop of <a href="https://developer.valvesoftware.com/wiki/Source_2" target="_blank">Source 2</a> 
-            that makes game development easier and faster for everyone.</p>
-      </div>
-      <div class="project">
-          <img src="./img/brsSim.png">
-          <h2>Belousov Reaction Simulation</h2>
-          <p>This was a project for AP Computer Science A. For my final project, I wrote a simulation of the  <a href="https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction" target="_blank">Belousov Reaction</a>.
-             It was written in Java using AWT and Swing.
-             <br><br> This can be found in my <a href="https://github.com/Louis-Ladd/belousovReactionSim" target="_blank">github</a>.</p>
-      </div>
-       <div class="project">
-          <img src="./img/neuralMap.png">
-          <h2>Car Year Classifier</h2>
-          <p>My final project for a Data Science class which involved using TensorFlow to create a neural network. The goal was to train the network to identify the year of cars in images.
-            I enjoyed this project quite a bit and I was able to get a <b>70%</b> accuracy on 15,000 images (70/30 train test split).
-            The above image is a neuron activation heat map of the network showing what the network was looking at to make its decisions.</p>
-      </div>
-    </div>
-    </div>
-  <footer>
-    <h2>©2024 Louis All rights reserved</h2>
-  </footer>
+	<nav>
+	<a class="active" href="#">Home</a>
+	<a class="" href="aboutme.html">About Me</a>
+	</nav>
+	<div class="content">
+	<div class="section intro">
+		<h1>
+		Hello!<br>My name is <span>Louis🧍</span>
+		</h1>
+		<h2>
+		I love making
+		<div class="explode-parent" id="explode-icons">
+			<a href="#explode-icons" class="rainbow_text_animated">software</a>
+			<div class="explode-icons">
+			<img src="./img/svg/csharp-plain.svg" aria-hidden="true">
+			<img src="./img/svg/python-plain.svg" aria-hidden="true">
+			<img src="./img/svg/java-plain.svg" aria-hidden="true">
+			<img src="./img/svg/github-original.svg" aria-hidden="true">
+			<img src="./img/svg/html5-plain.svg" aria-hidden="true">
+			<img src="./img/svg/css3-plain.svg" aria-hidden="true">
+			<img src="./img/svg/linux-plain.svg" aria-hidden="true">
+			<img src="./img/svg/unity-plain.svg" aria-hidden="true">
+			<img src="./img/svg/vim-plain.svg" aria-hidden="true">
+			<img src="./img/svg/cplusplus-plain.svg" aria-hidden="true">
+			<img src="./img/svg/rust-original.svg" aria-hidden="true">
+			<img src="./img/svg/git-plain.svg" aria-hidden="true">
+			<img src="./img/svg/sql-plain.svg" aria-hidden="true">
+			</div>
+		</div>
+		</h2>
+	</div>
+	<div class="section github">
+		<h2>
+		Check out my
+		<div class="explode-parent">
+			<a href="https://github.com/Louis-Ladd" target="_blank" class="rainbow_text_animated">github</a>
+			<div class="explode-icons github">
+			<img src="./img/svg/github-original.svg">
+			</div>
+		</div>
+		</h2>
+	</div>
+	<div class="section">
+		<h2>
+		What I'm working on
+		</h2>
+		<div id="feed"></div>
+	</div>
+	<div class="section projects" id="projects-section">
+		<div class="project equalize-height">
+		<img src="./img/waveSpeak.png">
+		<h2>WaveSpeak</h2>
+		<p>An AAC tablet that focuses on tactility and adaptability, I call it WaveSpeak.
+			This project is uses tauri which uses rust and dynamic html to build a fullstack application. <br>🚧(project
+			page is currently under construction)🚧
+		</p>
+		<a class="button" href="./wavespeak.html">
+			View Project
+		</a>
+		</div>
+		<div class="project equalize-height">
+		<img src="./img/svg/sbox-logo.svg">
+		<h2>s&box</h2>
+		<p>I am participating in the <a href="https://sbox.game/" target="_blank">s&box</a> developer preview.
+			s&box is a toolchain built ontop of <a href="https://developer.valvesoftware.com/wiki/Source_2"
+			target="_blank">Source 2</a>
+			that makes game development easier and faster for everyone.
+		</p>
+		<a class="button" href="https://sbox.game/about" target="_blank" referrerpolicy="no-referrer">
+			View Project
+		</a>
+		</div>
+		<div class="project equalize-height">
+		<img src="./img/brsSim.png">
+		<h2>Belousov Reaction Simulation</h2>
+		<p>This was a project for AP Computer Science A. For my final project, I wrote a simulation of the <a
+			href="https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction" target="_blank">Belousov
+			Reaction</a>.
+			It was written in Java using AWT and Swing.
+			<br><br> This can be found in my <a href="https://github.com/Louis-Ladd/belousovReactionSim"
+			target="_blank">github</a>.
+		</p>
+		<a class="button" href="belousovsim.html">
+			View Project
+		</a>
+		</div>
+		<div class="project equalize-height">
+		<img src="./img/neuralMap.png">
+		<h2>Car Year Classifier</h2>
+		<p>My final project for a Data Science class which involved using TensorFlow to create a neural network. The
+			goal was to train the network to identify the year of cars in images.
+			I enjoyed this project quite a bit and I was able to get a <b>70%</b> accuracy on 15,000 images (70/30 train
+			test split).
+			The above image is a neuron activation heat map of the network showing what the network was looking at to
+			make
+			its decisions.
+		</p>
+		<a class="button inactive">
+			In Construction	
+		</a>
+		</div>
+	</div>
+	</div>
+	{% include footer.html %}
 </body>
+
 </html>
