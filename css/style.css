@@ -357,6 +357,18 @@ p {
 	transition: ease-in 0.25s;
 }
 
+.project .button.inactive {
+	background-color: gray;
+	color: white;
+	border-style: none;
+}
+
+.project .button:hover.inactive {
+	background-color: gray;
+	cursor: default;
+}
+
+
 .project .button:hover {
 	background-color: var(--accent-color-dark);
 	color: white;
