@@ -271,6 +271,13 @@ p {
 	animation: MoveUpDown 2s infinite;
 }
 
+.explode-icons>img:nth-child(14) {
+	/*gimp*/
+	transition: 200ms;
+	transform: translate(-250px, 550px);
+	animation: MoveUpDown 2s infinite;
+}
+
 .explode-icons.github img {
 	position: absolute;
 	top: -40px;
@@ -626,7 +633,7 @@ div.project-header.wvspk {
 	}
 
 	.explode-parent {
-		padding-top: 60px;
+		padding-top: 2em;
 	}
 
 	.explode-icons {
@@ -639,6 +646,10 @@ div.project-header.wvspk {
 
 	.explode-icons:not(.github) img {
 		scale: 0.2;
+	}
+
+	.explode-icons>img:nth-child(14) {
+		transform: translate(-500px, 0px);
 	}
 
 	.explode-parent:hover .explode-icons:hover img {
