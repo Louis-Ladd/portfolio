@@ -38,7 +38,7 @@ nav a {
 	text-decoration: none;
 	font-size: 25px;
 	border-radius: 20px;
-	padding-inline: 20px;
+	padding-inline: 0.25em;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color: var(--bg2-color);
@@ -610,7 +610,7 @@ div.project-header.wvspk {
 		margin-top: 20px;
 		margin-left: 0;
 		margin-right: 0;
-		padding-inline: 0px;
+		padding-inline: 0.25em;
 	}
 
 	.section h1 {
